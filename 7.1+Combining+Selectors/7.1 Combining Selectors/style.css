@@ -3,7 +3,11 @@ h1,h2{
     color: blueviolet;
 }
 
-li{
+/* li{
+    color: blue;
+} */
+
+.box .list{
     color: blue;
 }
 
@@ -11,11 +15,15 @@ li{
     color: darkred;
 }
 
-li.done{
-    color: green;
+.box li.done{
+    color: seagreen;
 }
 
 
 ul > p.done{
     font-size: 7px;
 }
+
+/* ul p.done{
+    font-size: 7px;
+} */
