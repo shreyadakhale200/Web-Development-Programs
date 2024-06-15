@@ -1,0 +1,41 @@
+#PositioningDemo{
+    background-color: blue;
+    padding: 20px;
+    margin: 0;
+    color: white;
+}
+#box1{
+    background-color: aqua;
+    position: static;
+    padding: 2em;
+    margin-top: 2em;
+    height: 100px;
+    width: 100px;
+}
+#box2{
+    background-color: rgb(0, 47, 255);
+    position:absolute;
+    padding: 2em;
+    margin-top: 2em;
+    height: 100px;
+    z-index: 10;
+    width: 100px;
+}
+#box3{
+    background-color: rgb(255, 0, 140);
+    position:relative; 
+    /* It is relatice to the blue box */
+    z-index: 10;
+    padding: 2em;
+    margin-top: 7em;
+    height: 100px;
+    width: 100px;
+}
+#box4{
+    background-color: rgb(208, 0, 255);
+    z-index: 10;
+    padding: 2em;
+    position: fixed;
+    height: 100px;
+    width: 100px;
+}
