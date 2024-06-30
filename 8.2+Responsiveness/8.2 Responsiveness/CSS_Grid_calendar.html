@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid Calendar</title>
+    <style>
+      h1 {
+        background: rgba(255, 255, 255, 0.25);
+        background: rgb(238, 174, 202);
+      }
+
+      * {
+        background: rgb(238, 174, 202);
+        background: radial-gradient(
+          circle,
+          rgba(238, 174, 202, 1) 0%,
+          rgba(148, 187, 233, 1) 100%
+        );
+      }
+      ul.grid-container {
+        /* display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1px 12px 12px 12px 12px 12px 12px;
+        gap: 190px;
+        flex-wrap: nowrap; */
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        /* padding-right: 12em; */
+      }
+      .block {
+        grid-column: span 1;
+        border-radius: 0.8rem;
+        width: 235px;
+        height: 190px;
+        background: rgba(255, 255, 255, 0.25);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        font-family: "Poppins", serif;
+        font-weight: 100;
+        /* font-size: 26px; */
+      }
+      time,
+      p.para {
+        /* grid-column: span 1; */
+        /* border-radius: 0.8rem; */
+        /* width: 235px; */
+        /* height: 190px; */
+        background: rgba(255, 255, 255, 0);
+        /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
+        font-family: "Poppins", serif;
+        font-weight: 100;
+        font-size: 26px;
+      }
+
+      time,
+      .para {
+        padding-left: 23px;
+        font-size: 34px;
+      }
+
+      li,
+      span {
+        display: flex;
+        width: 10rem;
+        height: 10rem;
+        /* margin: 0.25rem; */
+        flex-flow: column;
+        border-radius: 0.2rem;
+        padding: 1rem;
+        font-weight: 300;
+        font-size: 0.8rem;
+        box-sizing: border-box;
+        background: rgba(255, 255, 255, 0.25);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+      }
+
+      time {
+        font-style: oblique;
+        font-family: rockwell;
+      }
+
+      span {
+        font-size: 22px;
+        padding: 8px;
+        width: 200px;
+      }
+
+      #Chocolate {
+        background-color: rgb(113, 71, 29);
+      }
+
+      #Groundhog {
+        background-color: rgb(193, 237, 0);
+      }
+
+      #Carrot {
+        background-color: orange;
+      }
+
+      #Red {
+        background-color: rgb(251, 1, 1);
+      }
+
+      #Weather {
+        background-color: rgb(50, 147, 232);
+      }
+
+      #Chopstick {
+        background-color: blueviolet;
+      }
+
+      #Periodic {
+        background-color: rgb(106, 106, 248);
+      }
+
+      .block {
+        background-color: rgba(245, 222, 179, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="grid-container">
+      <li class="box1 block">
+        <time datetime="2024-02-01">1</time><br />
+        <span id="Chocolate"> Dark Chocolate Day </span>
+      </li>
+      <li class="box2 block">
+        <time datetime="2024-02-02">2</time><br />
+        <span id="Groundhog"> Groundhog Day </span>
+      </li>
+      <li class="box3 block">
+        <time datetime="2024-02-03">3</time><br />
+        <span id="Carrot"> Carrot Day </span>
+      </li>
+      <li class="box4 block">
+        <time datetime="2024-02-04">4</time><br />
+        <span id="Red">Wear Red Day </span>
+      </li>
+      <li class="box5 block">
+        <time datetime="2024-02-05">5</time><br />
+        <span id="Weather"> Weatherperson's Day </span>
+      </li>
+      <li class="box6 block">
+        <time datetime="2024-02-06">6</time><br />
+        <span id="Chopstick">Chopsticks Day </span>
+      </li>
+      <li class="box7 block">
+        <time datetime="2024-02-07">7</time><br />
+        <span id="Periodic"> Periodic Table Day </span>
+      </li>
+    </ul>
+  </body>
+</html>
